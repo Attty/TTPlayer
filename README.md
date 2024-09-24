@@ -1,4 +1,4 @@
-# Video Streaming App
+# TTPlayer
 
 This is a video streaming application built with Jetpack Compose for UI, designed to fetch and display videos from a remote server. It also supports offline caching of video metadata and dynamic theme switching between light and dark modes.
 
