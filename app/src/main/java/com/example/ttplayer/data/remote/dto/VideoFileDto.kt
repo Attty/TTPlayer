@@ -1,6 +1,6 @@
 package com.example.ttplayer.data.remote.dto
 
-data class VideoFile(
+data class VideoFileDto(
     val file_type: String,
     val fps: Double,
     val height: Int,

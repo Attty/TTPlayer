@@ -1,10 +1,10 @@
-package com.example.ttplayer.data.local
+package com.example.ttplayer.data.local.room
 
 import androidx.room.Dao
 import androidx.room.Insert
 import androidx.room.OnConflictStrategy
 import androidx.room.Query
-import com.example.ttplayer.data.local.entity.VideoEntity
+import com.example.ttplayer.data.local.room.entity.VideoEntity
 
 @Dao
 interface VideoDao {

@@ -1,4 +1,4 @@
-package com.example.ttplayer.data.local.entity
+package com.example.ttplayer.data.local.room.entity
 
 import androidx.room.Entity
 import androidx.room.PrimaryKey

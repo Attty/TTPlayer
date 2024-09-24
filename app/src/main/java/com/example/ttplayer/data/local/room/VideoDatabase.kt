@@ -1,8 +1,8 @@
-package com.example.ttplayer.data.local
+package com.example.ttplayer.data.local.room
 
 import androidx.room.Database
 import androidx.room.RoomDatabase
-import com.example.ttplayer.data.local.entity.VideoEntity
+import com.example.ttplayer.data.local.room.entity.VideoEntity
 
 @Database(
     entities = [VideoEntity::class],

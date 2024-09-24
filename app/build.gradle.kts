@@ -1,8 +1,10 @@
 plugins {
     alias(libs.plugins.android.application)
     alias(libs.plugins.jetbrains.kotlin.android)
+    alias(libs.plugins.kotlin.serialization)
     kotlin("kapt")
     id("com.google.dagger.hilt.android")
+
 }
 
 android {
@@ -53,6 +55,12 @@ android {
 
 dependencies {
 
+    //DataStore
+    implementation("androidx.datastore:datastore-preferences:1.1.1")
+
+    //More Icons
+    implementation("androidx.compose.material:material-icons-extended-android:1.7.2")
+
     //Hilt
     implementation("com.google.dagger:hilt-android:2.51.1")
     kapt("androidx.hilt:hilt-compiler:1.2.0")
@@ -62,7 +70,11 @@ dependencies {
 
     //Room
     implementation("androidx.room:room-runtime:2.6.1")
+    implementation("androidx.room:room-ktx:2.6.1")
     kapt("androidx.room:room-compiler:2.6.1")
+
+    //Coil
+    implementation("io.coil-kt:coil-compose:2.7.0")
 
     //Retrofit2
     implementation ("com.squareup.retrofit2:retrofit:2.9.0")
@@ -70,8 +82,11 @@ dependencies {
 
     //Exoplayer
     implementation("androidx.media3:media3-exoplayer:1.4.1")
+    implementation("androidx.media3:media3-common:1.4.1")
     implementation("androidx.media3:media3-ui:1.4.1")
 
+    implementation(libs.navigation.compose)
+    implementation(libs.kotlinx.serialization.json)
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.lifecycle.runtime.ktx)
     implementation(libs.androidx.activity.compose)

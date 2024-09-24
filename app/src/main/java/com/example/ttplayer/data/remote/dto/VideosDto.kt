@@ -1,14 +1,14 @@
 package com.example.ttplayer.data.remote.dto
 
-data class Videos(
+data class VideosDto(
     val next_page: String,
     val page: Int,
     val per_page: Int,
     val total_results: Int,
     val url: String,
-    val videos: List<Video>
+    val videos: List<VideoDto>
 ) {
-    fun toVideo(): List<Video> {
+    fun toVideosDto(): List<VideoDto> {
         return this.videos
     }
 }
